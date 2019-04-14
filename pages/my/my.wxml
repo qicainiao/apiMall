@@ -17,7 +17,7 @@
       </navigator>
     </swiper>
   </view>
-  <view class="userinfo-item">
+  <!-- <view class="userinfo-item">
     <image src="../../images/profile_dfunding.png"></image>
     <navigator url="/pages/order-list/order-list" hover-class="none">我的订单</navigator>
   </view>
@@ -42,13 +42,13 @@
       <image src="../../images/order-details/orderform.png"></image>
       待评价
     </navigator>
-  </view>
+  </view> -->
   <view class="userinfo-item-box">
-    <navigator  hover-class="none" class="userinfo-item" url="/pages/withdraw/withdraw">
+    <!-- <navigator  hover-class="none" class="userinfo-item" url="/pages/withdraw/withdraw">
       <image src="../../images/profile_tegral.png"></image>
       <text>{{balance}}元</text>
       <view>我的余额</view>
-    </navigator>
+    </navigator> -->
     <navigator hover-class="none" class="userinfo-item" url="/pages/score/score">
       <image src="../../images/jifen.png"></image>
 			<text>{{score}}积分</text>

@@ -1,4 +1,6 @@
 //index.js
+var WxParse = require('../../wxParse/wxParse.js');
+
 //获取应用实例
 const app = getApp()
 
@@ -95,6 +97,10 @@ Page({
 		    }
 		  }
 		})
+
+
+    
+
 
     //1个热销广告位
     wx.request({

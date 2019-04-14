@@ -104,6 +104,8 @@ page{
 .index-hot{
 	margin-top: 10rpx;
 }
+
+
 .index-hot .hot-item{
 	width: 350rpx;
 	height: 269rpx;

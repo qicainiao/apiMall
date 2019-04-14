@@ -104,7 +104,7 @@ Page({
       success: function (res) {
         if (res.data.code == 20001 || res.data.code == 20002) {
           wx.showModal({
-            title: '错误',
+            title: '友情提示',
             content: '礼券已经领完了',
             showCancel: false
           })
@@ -112,7 +112,7 @@ Page({
         }
         if (res.data.code == 20003) {
           wx.showModal({
-            title: '错误',
+            title: '友情提示',
             content: '您已经领过了',
             showCancel: false
           })
@@ -120,7 +120,7 @@ Page({
         }
         if (res.data.code == 30001) {
           wx.showModal({
-            title: '错误',
+            title: '友情提示',
             content: '您的积分不足',
             showCancel: false
           })
@@ -128,7 +128,7 @@ Page({
         }
         if (res.data.code == 20004) {
           wx.showModal({
-            title: '错误',
+            title: '友情提示',
             content: '礼券已经过期',
             showCancel: false
           })
@@ -136,13 +136,13 @@ Page({
         }
         if (res.data.code == 0) {
           wx.showToast({
-            title: '礼券领取成功',
+            title: '礼券领取成功，请到我的礼券查看',
             icon: 'success',
             duration: 2000
           })
         } else {
           wx.showModal({
-            title: '错误',
+            title: '友情提示',
             content: res.data.msg,
             showCancel: false
           })

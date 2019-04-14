@@ -1,4 +1,5 @@
 <!--index.wxml-->
+<import src="../../wxParse/wxParse.wxml" />
 <navigation id='Navigation' show-search='{{showSearch}}' class="fix-top" animation="{{fadeAni}}"></navigation>
 <view class="container">
 	<view class="swiper-container">
@@ -31,6 +32,8 @@
 			</block>
 		</view>
 
+   <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+   
     	<view class="index-hot flex">
 			<block wx:for="{{hot2}}" wx:key="hot">
 				<navigator hover-class="none" class="hot-item2" url="{{item.linkUrl}}">

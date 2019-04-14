@@ -25,15 +25,16 @@
     "pages/success/success",
     "pages/pay-order/pay-order",
     "pages/freshman/freshman",
-    "pages/search/search"
+    "pages/search/search",
+    "pages/sheji/index"
   ],
   "window": {
     "navigationStyle": "custom",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "color": "#838383",
-    "selectedColor": "#b4282d",
+    "color": "#8a8a8a",
+    "selectedColor": "#31c2b1",
     "borderStyle": "white",
     "backgroundColor": "#fff",
     "list": [
@@ -44,17 +45,18 @@
         "text": "首页"
       },
       {
-        "pagePath": "pages/cate/cate",
-        "iconPath": "images/nav/menu-off.png",
-        "selectedIconPath": "images/nav/menu-on.png",
-        "text": "1万案例"
+        "pagePath": "pages/sheji/index",
+        "iconPath": "images/nav/celiang-off.png",
+        "selectedIconPath": "images/nav/celiang-on.png",
+        "text": "0元设计"
       },
       {
-        "pagePath": "pages/cart/cart",
-        "iconPath": "images/nav/cart-off.png",
-        "selectedIconPath": "images/nav/cart-on.png",
-        "text": "清单"
+        "pagePath": "pages/cate-list/cate-list",
+        "iconPath": "images/nav/menu-off.png",
+        "selectedIconPath": "images/nav/menu-on.png",
+        "text": "精选案例"
       },
+     
       {
         "pagePath": "pages/my/my",
         "iconPath": "images/nav/my-off.png",
@@ -62,5 +64,6 @@
         "text": "我的"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

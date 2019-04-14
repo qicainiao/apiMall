@@ -1,0 +1,45 @@
+/* pages/sheji/index.wxss */
+.celiang{
+  width:750rpx;
+  height:527rpx;
+  position: relative;
+}
+
+.celiang .celiang-image{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.yuyue{
+  position: absolute;
+  left: 96rpx;
+  right: 0;
+  top: 344rpx;
+  bottom: 0;
+  font-size: 24rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:300rpx;
+}
+
+.row-box {
+  width: 288rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 4rpx;
+  background: #fff;
+  border-radius: 8px;
+  margin-top: 20rpx;
+}
+
+.row-box .row-label {
+  font-size: 28rpx;
+  color: #000;
+  width:84rpx;
+}

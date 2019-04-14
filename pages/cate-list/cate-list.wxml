@@ -1,17 +1,18 @@
-<navigation id='Navigation' show-icon="{{true}}" title="分类列表" show-title="{{true}}" class=""></navigation>
+<navigation id='Navigation' show-icon="{{true}}" title="精选案例" show-title="{{true}}" class=""></navigation>
 <view class="container {{iphone}}">
   <view class="goods-container">
     <view class="goods-box" wx:for-items="{{goods}}" wx:key="{{index}}" bindtap="toDetailsTap" data-id="{{item.id}}">
       <view class="img-box">
-        <image src="{{item.pic}}_m" class="image" mode="widthFix" lazy-load="true" />
+        <image src="{{item.pic}}_m" class="image" mode="aspectFill" lazy-load="true" />
         <view class="goods-characteristic">
           <text>{{item.characteristic}}</text>
         </view>
       </view>
       <view class="goods-title">{{item.name}}</view>
       <view style='display:flex;'>
-        <view class="goods-price">Ұ{{item.minPrice}}</view>
-        <view class="goods-price-naver">已售{{item.numberOrders}}</view>
+        <!-- <view class="goods-price">Ұ{{item.minPrice}}</view> -->
+        <view class="goods-price-naver">
+           <image style='width:48rpx;height:48rpx;margin-right:14rpx' src="../../images//attention.png" />{{item.numberOrders}}</view>
       </view>
     </view>
   </view>

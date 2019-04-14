@@ -1,0 +1,27 @@
+<import src="../../wxParse/wxParse.wxml" />
+
+<view style='width:100%;height:100%'>
+  <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+  <view class='celiang'>
+    <image class='celiang-image' src='../../images/ban3_01.jpg' style='width:750rpx;height:690rpx' mode='aspectFill'></image>
+    <form class='yuyue' bindsubmit="bindsubmit" report-submit="true">
+      <view class="row-box">
+        <view class="row-label">姓名</view>
+        <view class="right-text">
+          <input name="name" type="text" class="liuyan" placeholder="如何称呼您？" />
+        </view>
+      </view>
+
+      <view class="row-box">
+        <view class="row-label">电话</view>
+        <view class="right-text">
+          <input name="phone" type="text" class="liuyan" placeholder="您的联系方式" />
+        </view>
+      </view>
+      <button formType="submit" style='background-color:transparent'>
+       <image src='../../images/baoming_btn.png' style='width:200rpx;height:50rpx;margin:16px 10rpx 16rpx 20rpx;' ></image>
+      </button>
+     
+    </form>
+  </view>
+</view>

@@ -18,7 +18,6 @@ Page({
     wx.request({
       url: app.globalData.urls + '/shop/goods/list',
       data: {
-        categoryId: e.id,
         pageSize: 100
       },
       success: function (res) {
